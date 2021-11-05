@@ -11,7 +11,7 @@
                             <h5>Cantidad de ingresos</h5>
                         </td>
                         <td>
-                            <h6>{@Ingresos}</h6>
+                            <h6><%= x.ingresos %></h6>
                         </td>
                     </tr>
                     <tr>
@@ -19,7 +19,7 @@
                             <h5>Cantidad de Egresos</h5>
                         </td>
                         <td>
-                            <h6>{@Egresos}</h6>
+                            <h6><%= x.egresos %></h6>
                         </td>
                     </tr>
                 </table>
@@ -50,8 +50,7 @@
                             <td><%= x.status %></td>                                
                             <td> <%= link_to 'Tracking', 'path'(x.tracking, x), class: 'btn btn-success btn-sm' %></td>
                             <td> <%= link_to 'Factura', 'path'(x.factura, x), class: 'btn btn-primary btn-sm' %></td>
-                                
-          
+        
                         </tr>
                     </tbody>              
                       
